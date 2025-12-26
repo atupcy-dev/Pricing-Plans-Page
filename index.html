@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="pricing">
+        <div class="pricing-header">
+            <h1>Plans & Pricing</h1>
+            <p>Choose a plan that fits your growth stage</p>
+
+            <div class="billing-toggle">
+                <span>Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="billingToggle">
+                    <span class="slider"></span>
+                </label>
+                <span>Yearly <small>(save 15%)</small></span>
+            </div>
+        </div>
+
+        <div class="pricing-cards">
+            <div class="card">
+                <h3>Lite</h3>
+                <p class="price">
+                    <span class="amount" data-month="29" data-year="290">$29</span>
+                    <span>/mo</span>
+                </p>
+                <ul>
+                    <li>5 projects</li>
+                    <li>Basic analytics</li>
+                    <li>Email support</li>
+                    <li>Community access</li>
+                </ul>
+                <button class="btn">Get Started</button>
+            </div>
+
+            <div class="card popular">
+                <span class="badge">Most Popular</span>
+                <h3>Standard</h3>
+                <p class="price">
+                    <span class="amount" data-month="79" data-year="790">$79</span>
+                    <span>/mo</span>
+                </p>
+                <ul>
+                    <li>20 projects</li>
+                    <li>Advanced analytics</li>
+                    <li>Priority support</li>
+                    <li>Team collaboration</li>
+                </ul>
+                <button class="btn primary">Get Started</button>
+            </div>
+
+            <div class="card">
+                <h3>Advanced</h3>
+                <p class="price">
+                    <span class="amount" data-month="149" data-year="1490">$149</span>
+                    <span>/mo</span>
+                </p>
+                <ul>
+                    <li>Unlimited projects</li>
+                    <li>Custom reports</li>
+                    <li>Dedicated support</li>
+                    <li>API access</li>
+                </ul>
+                <button class="btn">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

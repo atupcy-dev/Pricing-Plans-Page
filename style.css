@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+    background: #88a8f4;
+    color: #020617;
+}
+
+.pricing {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pricing-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.pricing-header p {
+    color: #393b3f;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.billing-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.switch {
+    position: relative;
+    width: 50px;
+    height: 26px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background: #334155;
+    border-radius: 50px;
+    inset: 0;
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    transition: 0.3s;
+}
+
+input:checked + .slider {
+    background: #6366f1;
+}
+
+input:checked + .slider::before {
+    transform: translateX(24px);
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 14px;
+    border: 1px solid #1e293b;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.card ul li {
+    margin-bottom: 12px;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    background: #1e293b;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #334155;
+}
+
+.primary {
+    background: #6366f1;
+}
+
+.primary:hover {
+    background: #4f46e5;
+}
+
+.popular {
+    border: 2px solid #6366f1;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #6366f1;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 999px;
+}
